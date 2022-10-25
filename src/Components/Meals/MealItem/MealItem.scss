@@ -1,0 +1,50 @@
+#MealItem {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid grey;
+  div {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .singleMeal {
+    width: 267px;
+  }
+  .mealDescription {
+    font-style: italic;
+  }
+  .mealPrice {
+    font-weight: 700;
+    color: green;
+  }
+  .singleMealImg {
+    height: 100px;
+    width: 150px;
+  }
+  .addAmount {
+    label {
+      font-weight: 700;
+    }
+    input {
+      width: 30px;
+      margin-left: 10px;
+      border: 2px solid;
+      padding: 3px;
+    }
+    button {
+      background-color: #4d1601;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+      &:hover,
+      &:active {
+        background-color: #2c0d00;
+      }
+    }
+  }
+}

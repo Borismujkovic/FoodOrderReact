@@ -1,0 +1,40 @@
+#CartItems {
+  border-bottom: 2px solid rgba(65, 62, 62, 0.589);
+  .orderedItem {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .trashcan {
+      cursor: pointer;
+      height: 22px;
+      margin-right: 10px;
+      padding: 3px;
+      &:hover {
+        background-color: #832a074f;
+        border-radius: 10px;
+      }
+    }
+  }
+  .amountPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    .spanPrice {
+      margin-right: 10px;
+      font-size: 23px;
+    }
+    .spanQuantity {
+      font-size: 20px;
+      border: 1px solid rgb(37, 37, 37);
+      padding: 1px 5px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .totalMealPrice {
+      font-size: 23px;
+    }
+  }
+}

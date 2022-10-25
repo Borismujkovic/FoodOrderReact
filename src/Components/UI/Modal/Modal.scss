@@ -1,0 +1,67 @@
+#Modal {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.459);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-down 300ms ease-out forwards;
+  .modalCheckout {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 30%;
+    border-radius: 20px;
+    border: 5px solid rgb(245, 205, 130);
+  }
+  .priceCheckout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    .priceCan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .closeModal {
+    text-align: right;
+    .disabled {
+      background-color: #5a1a0117;
+      cursor: not-allowed;
+      &:hover {
+        background-color: #5a1a0117;
+        color: #5a1a01;
+      }
+    }
+  }
+  .closeModal button {
+    font: inherit;
+    background-color: #5a1a0149;
+    color: #5a1a01;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    margin-left: 10px;
+    &:hover,
+    &:active {
+      background-color: #7a2706;
+      color: white;
+    }
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
