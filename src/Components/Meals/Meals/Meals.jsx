@@ -1,6 +1,6 @@
 import { MealItem } from "../MealItem/MealItem";
 
-import "./Meals.scss";
+import "./Meals.css";
 
 export const Meals = (props) => {
   return (
