@@ -31,7 +31,7 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch(
-        "https://foodorderapp-3283c-default-rtdb.firebaseio.com/meals.json"
+        "https://foodorder-e6ac4-default-rtdb.firebaseio.com/meals.json"
       );
 
       if (!response.ok) {
@@ -54,6 +54,8 @@ export const HomePage = () => {
       setMeals(loadedMeals);
     };
 
+    console.log(meals);
+
     fetchMeals().catch((error) => {
       setHttpError(error.message);
     });
@@ -69,7 +71,7 @@ export const HomePage = () => {
 
   const submitOrderHandler = async (userData) => {
     await fetch(
-      "https://foodorderapp-3283c-default-rtdb.firebaseio.com/orders.json",
+      "https://foodorder-e6ac4-default-rtdb.firebaseio.com/orders.json",
       {
         method: "POST",
         body: JSON.stringify({
