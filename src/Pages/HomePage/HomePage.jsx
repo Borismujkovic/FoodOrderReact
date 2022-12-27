@@ -31,7 +31,7 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch(
-        "https://orderfoodapp-a25f5-default-rtdb.firebaseio.com/meals.json"
+        "https://orderapp-81935-default-rtdb.firebaseio.com/meals.json"
       );
 
       if (!response.ok) {
@@ -71,7 +71,7 @@ export const HomePage = () => {
 
   const submitOrderHandler = async (userData) => {
     await fetch(
-      "https://orderfoodapp-a25f5-default-rtdb.firebaseio.com/orders.json",
+      "https://orderapp-81935-default-rtdb.firebaseio.com/orders.json",
       {
         method: "POST",
         body: JSON.stringify({
@@ -132,7 +132,7 @@ export const HomePage = () => {
         <Description />
         <div>
           <Meals meals={meals} />
-        </div>
+        </div>  
       </div>
     </CartProvider>
   );
